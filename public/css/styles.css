@@ -1,0 +1,513 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+header {
+    background: #007bff;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin-right: 1rem;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.hero {
+    background: #e9ecef;
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+.hero h2 {
+    font-size: 2rem;
+}
+
+.hero .btn {
+    background: #007bff;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+}
+/* Vehicle Card Layout */
+.vehicle-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.vehicle-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%; /* Adjust the width of each vehicle card */
+    padding: 15px;
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s ease;
+    cursor: pointer;
+    margin: 20px auto;
+}
+
+
+
+.vehicle-info {
+    flex: 1;
+}
+
+.vehicle-image {
+    width: 300px;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.vehicle-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+.vehicle-img:hover {
+    transform: scale(1.2); /* Zoom effect */
+    box-shadow: inset;
+    
+}
+
+.vehicle-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    background-color: #cae2f7 ;
+    width: 100%;
+}
+
+.cta-section {
+    text-align: center;
+    padding: 2rem 0;
+    background: #f0f0f0;
+    border-radius: 8px;
+    margin-top: 2rem;
+}
+
+.cta-buttons {
+    margin-top: 1rem;
+}
+
+.cta-buttons .btn {
+    margin: 0 0.5rem;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    color: #fff;
+    background-color: #007bff;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.cta-buttons .btn.secondary {
+    background-color: #6c757d;
+}
+
+.cta-buttons .btn:hover {
+    background-color: #0056b3;
+}
+
+
+/* Footer Section */
+footer {
+    background-color: #333;
+    color: #f9f9f9;
+    padding: 1.5rem 0;
+    font-size: 0.9rem;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.footer-brand h4 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #fff;
+}
+
+.footer-brand p {
+    margin: 0;
+    color: #bbb;
+}
+
+.footer-links {
+    display: flex;
+    gap: 1rem;
+}
+
+.footer-links a {
+    color: #f9f9f9;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.footer-links a:hover {
+    color: #007bff;
+}
+
+.footer-social {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.footer-social a img {
+    width: 24px;
+    height: 24px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.footer-social a img:hover {
+    transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-links {
+        justify-content: center;
+    }
+
+    .footer-social {
+        justify-content: center;
+    }
+}
+
+
+/* Styling for the header section */
+.navbar-header {
+    text-align: left;
+    padding: 20px;
+    background-color: #007bf0; /* Same blue as the navigation bar */
+    color: white;
+}
+
+.site-title {
+    
+    font-size: 4rem; /* Large, bold font for the title */
+    text-transform: uppercase; /* Uppercase for strong styling */
+    margin: 0;
+    color: #ffffff; /* White text */
+    transition: transform 0.2s ease; /* Smooth transition effect for hover */
+    font-family:'Gill Sans', 'Gill Sans', sans-serif;
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+    animation: reset-position 5s ease forwards;
+}
+
+/* Add hover effect for shivering/vibrating */
+.site-title:hover {
+    animation: runaway-horizontal 5s ease-out; /* Apply shake animation */
+}
+@keyframes runaway-horizontal {
+    0% {
+        transform: translatex(0); /* Start at original position */
+    }
+    25% {
+        transform: translatex(-50vw); /* Move up */
+    }
+    50% {
+        transform: translatex(50vw); /* Move down */
+    }
+    75% {
+        transform: translatex(-30vw); /* Move up again */
+    }
+    100% {
+        transform: translatex(30vw); /* Reset to original position */
+    }
+}
+
+@keyframes reset-position {
+    from {
+        transform: translateX(30vw);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+
+
+
+
+
+
+
+.tagline {
+    font-family: 'wonderful'; /* Use the "Current" font for tagline */
+    font-size: 1.2rem; /* Smaller font for tagline */
+    margin: 5px 0 0; /* Slight spacing below the title */
+    color: #ffffff; /* Subtle lighter text */
+}
+
+
+
+
+
+/* Navigation Bar Styling */
+.navbar {
+    display: flex;
+    justify-content: right;
+    background-color: #007bff;
+    padding: 10px 0;
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    transition: font-size 0.2s ease, font-weight 0.2s ease;
+}
+
+/* Highlight active link */
+.nav-links a.active {
+    font-size: 2.0rem; /* Slightly larger font */
+    font-weight: bold; /* Bold for the active page */
+}
+
+.nav-links a:hover {
+    font-size: 2.0rem; /* Enlarge on hover */
+}
+
+
+
+
+/* Vehicle Details Page Styling */
+.vehicle-details-container {
+    padding: 20px;
+    margin: 20px;
+}
+
+.vehicle-details {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+}
+
+.vehicle-img-detail {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.vehicle-info {
+    max-width: 500px;
+}
+
+.vehicle-info h3 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.vehicle-info p {
+    font-size: 1.2rem;
+    margin: 5px 0;
+}
+
+
+/* Responsive Vehicle Grid */
+.vehicle-grid {
+    display: -moz-grid-line;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+/* Register Page Styling */
+.register-container {
+    width: 100%;
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.register-container h1 {
+    font-size: 24px;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.register-container p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.register-form {
+    text-align: left;
+}
+
+.register-form .form-group {
+    margin-bottom: 15px;
+}
+
+.register-form .form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.register-form .form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.register-form .btn {
+    width: 100%;
+    padding: 10px;
+    background: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.register-form .btn:hover {
+    background: #007bff;
+}
+
+.register-container a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.register-container a:hover {
+    text-decoration: underline;
+}
+
+/* Login Container */
+.login-container {
+    width: 100%;
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.login-container h1 {
+    font-size: 28px;
+    color: #007bf0;
+    margin-bottom: 20px;
+}
+
+.login-form {
+    width: 100%;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #333;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.btn-primary {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bf0;
+    border: none;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    background-color: #007bf0;
+}
+
+.form-footer {
+    margin-top: 10px;
+}
+
+.form-footer p {
+    font-size: 14px;
+    color: #666;
+}
+
+.form-footer a {
+    color: #007bf0;
+    text-decoration: none;
+}
+
+.form-footer a:hover {
+    text-decoration: underline;
+}

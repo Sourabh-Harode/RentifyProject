@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vehicle Rental Platform</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="navbar-header">
+            <h1 id="title" class="site-title">Rentify</h1>
+            <p class="tagline">Rent a Ride</p>
+        </div>
+        <nav class="navbar">
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="faq.html">FAQs</a></li>
+                <li><a href="benefits.html">Benefits</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="testimonials.html">Testimonials</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h2>Find or List Your Vehicle Today</h2>
+                <p>Your ultimate platform for renting vehicles.</p>
+                <a href="#cta" class="btn">Get Started</a>
+            </div>
+        </section>
+
+        <section id="vehicles">
+            <div class="container">
+                <h3>Available Vehicles</h3>
+                <div id="vehicle-list" class="vehicle-grid">
+                    <!-- Example of dynamically generated vehicle cards (20 vehicles) -->
+                    <div class="vehicle-card" onclick="openVehicleDetails(1)">
+                        <div class="vehicle-info">
+                            <h4>Car - Honda City</h4>
+                            <p><strong>Price:</strong> ₹500/hour</p>
+                            <p><strong>Location:</strong> New Delhi</p>
+                            <p><strong>Time Slots:</strong> 9 AM - 6 PM</p>
+                        </div>
+                        <div class="vehicle-image">
+                            <img src="images/honda_city.jpg" alt="Honda City" class="vehicle-img">
+                        </div>
+                    </div>
+                    <div class="vehicle-card" onclick="openVehicleDetails(2)">
+                        <div class="vehicle-info">
+                            <h4>Bike - Royal Enfield</h4>
+                            <p><strong>Price:</strong> ₹200/hour</p>
+                            <p><strong>Location:</strong> Bangalore</p>
+                            <p><strong>Time Slots:</strong> 10 AM - 8 PM</p>
+                        </div>
+                        <div class="vehicle-image">
+                            <img src="images/Royal.jpg" alt="Royal Enfield" class="vehicle-img">
+                        </div>
+                    </div>
+                    <!-- Add more vehicle cards (total 20) -->
+                    <!-- Example of the other 18 tiles -->
+                    <!-- Repeat the same structure for the other 18 vehicles -->
+                    <div class="vehicle-card" onclick="openVehicleDetails(3)">
+                        <div class="vehicle-info">
+                            <h4>Car - BMW X5</h4>
+                            <p><strong>Price:</strong> ₹1000/hour</p>
+                            <p><strong>Location:</strong> Mumbai</p>
+                            <p><strong>Time Slots:</strong> 9 AM - 5 PM</p>
+                        </div>
+                        <div class="vehicle-image">
+                            <img src="images/x5.jpeg" alt="BMW X5" class="vehicle-img">
+                        </div>
+                    </div>
+
+                    <div class="vehicle-card" onclick="openVehicleDetails(3)">
+                        <div class="vehicle-info">
+                            <h4>Car - innova</h4>
+                            <p><strong>Price:</strong> ₹700/hour</p>
+                            <p><strong>Location:</strong> Mumbai</p>
+                            <p><strong>Time Slots:</strong> 9 AM - 5 PM</p>
+                        </div>
+                        <div class="vehicle-image">
+                            <img src="images/innova.jpeg" alt="innova" class="vehicle-img">
+                        </div>
+                    </div>
+                    <!-- Repeat this structure for the remaining 17 vehicles -->
+                </div>
+            </div>
+        </section>
+        
+        <section id="cta">
+            <div class="container cta-section">
+                <h3>Join Us</h3>
+                <p>Create an account to list or rent vehicles.</p>
+                <div class="cta-buttons">
+                    <a href="register.html" class="btn">Sign Up</a>
+                    <a href="login.html" class="btn secondary">Login</a>
+                </div>
+            </div>
+        </section>
+
+      
+    </main>
+
+    <footer>
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <h4>RENTIFY</h4>
+                <p>© 2024 RENTIFY. All rights reserved.</p>
+            </div>
+            <div class="footer-links">
+                <a href="views/privacy.html">Privacy Policy</a>
+                <a href="views/terms.html">Terms of Service</a>
+                <a href="views/sitemap.html">Sitemap</a>
+            </div>
+            <div class="footer-social">
+                <a href="#"><img src="images\fb-icon.png" alt="Facebook"></a>
+                
+                <a href="#"><img src="images/insta-icon.jpeg" alt="Instagram"></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

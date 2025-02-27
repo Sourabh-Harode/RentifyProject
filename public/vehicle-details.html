@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vehicle Details</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="site-title">Rentify</div>
+            <p class="tagline">Rent a Ride</p>
+        </div>
+    </header>
+
+    <div class="vehicle-details-container">
+        <h2>Vehicle Details</h2>
+        <div class="vehicle-details">
+            <!-- Vehicle details will be dynamically inserted here -->
+            <img id="vehicle-image" src="" alt="Vehicle Image" class="vehicle-img-detail">
+            <div id="vehicle-info" class="vehicle-info">
+                <h3 id="vehicle-name"></h3>
+                <p><strong>Owner:</strong> <span id="vehicle-owner"></span></p>
+                <p><strong>Location:</strong> <span id="vehicle-location"></span></p>
+                <p><strong>Price:</strong> ₹<span id="vehicle-price"></span> per hour</p>
+                <p><strong>Time Slots:</strong> <span id="vehicle-time-slots"></span></p>
+                <p><strong>Description:</strong> <span id="vehicle-description"></span></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
